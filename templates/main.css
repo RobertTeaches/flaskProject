@@ -1,0 +1,32 @@
+.header-card {
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    max-width: 75%;
+    min-width: 10%;
+    border: 3px solid black;
+    padding: 0px 0px 10px 10px;
+    text-align: center;
+    background: rgba(255, 201, 27, 0.27);
+}
+
+.bounty-card
+{
+    font-family: 'Poppins Medium', sans-serif;
+    background: rgba(255,244,8,0.27);
+    max-width: 60%;
+    padding: 5px;
+    margin: auto;
+    margin-top: 3rem;
+    box-sizing: border-box;
+}
+
+.bounty-card :is(h1, h2, h3){
+    text-align: center;
+}
+
+.bounty-card :is(button)
+{
+    margin-left: 93%;
+    padding: 5px;
+}
+
