@@ -7,17 +7,20 @@
     padding: 0px 0px 10px 10px;
     text-align: center;
     background: rgba(255, 201, 27, 0.27);
+    border-radius: .8em;
 }
 
 .bounty-card
 {
     font-family: 'Poppins Medium', sans-serif;
     background: rgba(255,244,8,0.27);
-    max-width: 60%;
+    min-width: 20%;
+    max-width: 70%;
     padding: 5px;
     margin: auto;
     margin-top: 3rem;
     box-sizing: border-box;
+    border-radius: 1em;
 }
 
 .bounty-card :is(h1, h2, h3){
@@ -26,7 +29,17 @@
 
 .bounty-card :is(button)
 {
-    margin-left: 93%;
+    margin-left: 5%;
     padding: 5px;
 }
+
+
+button
+{
+    border-width: 0px;
+    background-color: #ff9c00;
+    border-radius: .2em;
+    font-family: 'Poppins', sans-serif;
+}
+
 
