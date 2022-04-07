@@ -14,9 +14,27 @@
         {% endif %}
 </head>
 <body>
-    <nav>
+    <nav class="header-nav">
         <a href="{{url_for("home")}}">Home</a>
+        {% if current_user.is_anonymous %}
+        <a href="{{ url_for("login") }}">Login</a>
+        {% else %}
+        <a href="{{ url_for("user_dashboard") }}">Dashboard</a>
+        <a href="{{ url_for("logout") }}">Log Out</a>
+        {% endif %}
     </nav>
+
+        <ul>
+        {% for message in get_flashed_messages() %}
+            <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
     {% block content %}{% endblock %}
 </body>
+
+<footer>
+    <p>SigmaTeaches© 2020-2022</p>
+    <p><a href="https://www.sigmateaches.com">SigmaTeaches</a></p>
+    <h1>PRODUCTION</h1>
+</footer>
 </html>

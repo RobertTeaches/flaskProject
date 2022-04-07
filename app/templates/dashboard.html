@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="header-card user">
+    <h1>
+        Welcome {{ current_user.username }}!
+    </h1>
+    <h2>
+        Your email is {{ current_user.email }}
+    </h2>
+</div>
+{% endblock %}

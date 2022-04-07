@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="header-card">
+        <h1>Login/Signup</h1>
+        <form action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.username.label }}<br>
+                {{ form.username(size=32) }}
+            </p>
+            <p>
+                {{ form.email.label }}<br>
+                {{ form.email(size=64) }}
+            </p>
+            <p>
+                {{ form.password.label }}<br>
+                {{ form.password(size=32) }}
+            </p>
+            <p>{{ form.remember_me() }}{{ form.remember_me.label }}</p>
+            <p>{{ form.submit() }}</p>
+        </form>
+    </div>
+{% endblock %}
+
+<p>I'll bet this gets added at the very end</p>
